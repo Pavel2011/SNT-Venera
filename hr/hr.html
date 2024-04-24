@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Page</title>
+  <link rel="shortcut icon" href="../Venus_page-0001--обрезано + Венера-1.jpg" />
+  
+  <!-- <link rel="stylesheet" href="shared.css" /> -->
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="hr.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="backdrop">    
+  </div>
+  <div class="backdrop1">    
+  </div>
+  <section class="header-section">
+    <div class="upper-header ">
+     <div>
+      <a href="index.html" class="main-header__brand">
+
+        <img src="../Venus_page-0001--обрезано + Венера-1.jpg" alt="АГРОХОЛДИНГ - Ваша компания." />
+      </a>
+     </div>
+      
+      <div class="tect-title">
+        <h1 class="c-title">СНТ "ВЕНЕРА"</h1>
+      </div>
+    </div>
+  <header class="main-header">
+
+    <div class="mobile-header">
+      <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+      </button>
+      <a href="index.html" class="mobile-header__brand">
+          <img src="../Venus_page-0001--обрезано + Венера-1.jpg" alt="logo AX">
+      </a>
+  </div>
+
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="../index.html">Хозяйство</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="../customers/index.html">Дискуссии/ расследования</a>
+        </li>
+
+        <li class="main-nav__item">
+          <a href="../us/index.html">Продукты</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="../deliveries/index.html">Объявления/Реклама</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="hr.html">Голосования</a>
+          <!-- ЭТО СТРАНИЦА - ГОЛОСОВАНИЕ -->
+        </li>
+        <li class="main-nav__item">
+          <a href="../contacts/index.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="mobile-nav">
+    <!-- <h2>мобильная версия (не видима на ПК)</h2> -->
+    <button id='mob-menu__close' class=" btn-show">Закрыть</button>
+    <ul class="mobile-nav__items">
+      <li class="mobile-nav__item">
+        <a href="../index.html">Главная</a>
+      </li>
+
+      <li class="mobile-nav__item">
+        <a href="../customers/index.html">Дискуссии/ расследования</a>
+      </li>
+
+                    <li class="mobile-nav__item">
+                      <a href="../us/index.html">Бухгалтерия</a>
+                    </li>
+      <li class="mobile-nav__item">
+        <a href="../deliveries/index.html">Объявления/Реклама</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="hr.html">Голосования</a>
+        <!-- ЭТО СТРАНИЦА - ГОЛОСОВАНИЕ -->
+      </li> 
+      <li class="mobile-nav__item">
+        <a href="../contacts/index.html">Контакты</a>
+      </li>  
+     </ul>
+  </nav>    
+    </section>
+<!-- MAIN starts -->
+<!-- ЭТО СТРАНИЦА - ГОЛОСОВАНИЕ -->
+<section class="co-contacts">
+
+  <!-- big image start -->
+  <div class="hr-image">
+   <img src="../images/4_1_HR_Proforientatsiya.png" alt="hr-positions-image">  
+  </div>
+
+
+
+  <!-- image ends -->
+
+<!-- FORM STARTS============================================= -->
+<div class="show-hide_btns">
+
+  <button id="form-open_btn_id" class="form-open_btn">Заполнить анкету</button>
+  <!-- <i class="far fa-times-circle"></i> -->
+</div>
+<div class="form-hide_btn">
+  <button id="form-closer_btn_id" class="form-closer_btn"> Закрыть форму</button>
+  <!-- <i class="far fa-times-circle"></i> -->
+</div>
+
+<div class="form-container">
+
+
+ 
+      <form id="cv-form" method="POST" action="https://formsubmit.co/051027a6ae96cc513404de09b360c696"  enctype="multipart/form-data">
+
+    <div class="anketa-and-cancelbtn">
+
+
+<h2 class="anketa-form">Голосование</h2>
+<h4>Все поля обязательны</h4>
+
+    </div>
+        
+    <input type="hidden" name="_subject" value="Новый отклик на Голосования!">
+    <input type="hidden" name="_cc" value="plav2011@gmail.com">
+    <input type="hidden" name="_cc" value="plav2011@gmail.com">
+    <!--FORM...GRID LAYOUT  -->
+    <div class="form-grid">
+  <label for="">Фамилия Имя Отчество члена СНТ</label>
+      <div class="form-name">
+
+      <input type="text" name="name" id="full-name" placeholder="Фамилия Имя Отчество" required="" >
+
+      </div>
+  <label for="email">Электронный адрес члена СНТ, согласованный с Правлением СНТ</label>
+      <div class="email-address">
+
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" >
+          
+      </div>
+        <label for="">За / Против</label>
+      <div class="form-text">
+
+  <textarea rows="9" name="message" id="message" placeholder="Сопроводительное письмо"></textarea>
+
+
+  
+</div>
+  <label for="file">Приложения (если есть)</label>
+<div class="cv-file">
+
+  <input type="file" name="attachment" accept=".doc,.docx,xls,xlsx,.rtf,.pdf" required="Not" >
+
+
+<small>Допустимые форматы для файла: doc,docx,xls,xlsx,rtf или pdf</small>
+</div>
+  <label for="file">Фото</label>
+<div class="cv-photo_file">
+  <input type="file" name="attachment" accept="jpeg,jpg,tiff,psd,bmp,gif,png">
+<div class="" required="">
+  <small>Допустимые форматы для файла: jpeg,jpg,tiff,psd,bmp,gif,png</small>
+    <!--https://stackoverflow.com/questions/59114595/how-to-make-a-file-upload-not-required-when-handling-data-with-jquery-ajax  -->
+</div>
+
+</div>
+
+ <div class="">
+
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission / Отклик на вакансию">
+
+    <input class="submit-btn" type="submit" value="Отправить">  
+ </div>     
+
+
+    <small>После того как нажмёте отправить -вам предложат подтвердить, что вы не робот. Если Вы не робот - поодтвердите.</small>      
+    </div>
+
+
+  </form> 
+  </div> 
+  <!-- Form Ends ===============Form Ends==========================-->
+
+  <div class="co-info">
+ <div class="intro_hr"> 
+
+
+    <h3>Голосование: краткое описание метода</h3>  
+    <h3>
+      <ul>
+        <li>Регистрируются почтовые адреса, с которых будет отправлен голос</li>
+        <li>Определяется период голосования (если в периоде голования количество поданных голосов будет не достаточно для кворума - голосование признается не состоявшимся)</li>
+        <li>Голосование производится заполнением формы и отправки ее в 1/2/3 адреса (эти адреса вшиты в форму -это, например, адрес Председателя, члена Правления, 3-его лица - согласованного сторонами голосования) для подсчета голосов</li>
+        <li>Подсчет голосов производится получателями сообщений с голосом, полученных членов СНТ(с согласованных электронных адресов)</li>
+      </ul>
+    </h3>  
+ </div>
+
+
+    <h3>   
+      В настоящее время открыты следующие Голосования    
+    </h3>
+      <div id='hr_table_id' class="pos_table">
+
+          <div  class="div-position_info hr1">
+                            <!-- Начальник отдела по работе с клиентами/исполнению Госконтрактов -->
+            <a href="" class="a_pos_table">
+                О покупке электромотоблока с навесным оборудованием
+            </a>             
+          </div>
+          <div class="div-position_info hr2 salary">
+            от 50000 рублей
+          </div>
+
+          <div class="div-details hr3">
+
+            <h4>Э-мотоблок Беларусь</h4>
+            <ul class="Ddd">
+              <li class="d1"><span>Модель:</span> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>
+              <li class="d3"><span>Требования:</span><br>
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>              
+              <li class="d2">
+                <span>Допы:</span>  <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              </li>
+
+              <li class="d4">
+                <button id="btn1_ddd" class="anketa_open" >Голосовать
+
+                </button>
+              </li>
+            </ul>            
+
+          </div>
+        <div class="div-position_info hr4">
+          <a href="" class="a_pos_table">
+              Выборы нового члена правления
+            </a>
+
+        </div>  
+          <div class="div-position_info hr5 salary">
+            доброволец
+          </div>
+        
+        <div class="div-details hr6">
+
+            <h4>Описание Голосования</h4>
+            <ul class="Ddd">
+              <li class="d1"><span>Обязанности:</span> <br>Член правления обязан: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>
+              <li class="d3"><span>Требования:</span><br> является членом СНТ, выдвинут группой лиц (не менее 3-х подписей других членов СНТ). Имеет навыки... Участвует в чатах и обсуждениях. Не имеет задолженности по членским взносам за прошлые сезоны (сезон СНТ: май предыдущего года - апрель текущего года)
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>              
+              <li class="d2">
+                <span>Условия:</span> <br> Работа на дому и на территории СНТ Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              </li>
+
+              <li class="d4">
+                <button id="btn2_ddd" class="anketa_open">Откликнуться</button>
+              </li>
+            </ul>                        
+          <!-- </div>           -->
+        </div>
+        <div class="div-position_info hr7">
+            <a href="" class="a_pos_table">
+              Сторожка СНТ: энергоснабжение, водоснабжение.
+              В интересах СНТ, входит в общие расходы СНТ, покрывается из членских взносов членов СНТ. И летом, и зимой
+            </a>          
+
+         </div> 
+        <div  class="div-position_info hr8 salary">
+            Да/Нет
+        </div>
+        
+        <div class="div-details hr9">
+
+            <h4>Описание Голосования</h4>
+            <ul class="Ddd">
+              <li class="d1"><span>Метод:</span> <br> В теме письма ставим Да или Нет===Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>
+              <li class="d3"><span>Требования:</span><br>
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>              
+              <li class="d2">
+                <span>Условия:</span><br>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              </li>
+
+              <li class="d4">
+                <button id="btn3_ddd" class="anketa_open">Откликнуться</button>
+              </li>
+            </ul>                        
+
+        </div>        
+        <div class="div-position_info hr10">
+            <a href="" class="a_pos_table">
+              Специалист по работе с тендерами
+            </a>          
+
+        </div>  
+        <div class="div-position_info hr11 salary">
+            от 70 000 рублей
+        </div>
+        
+        <div class="div-details hr12">
+
+            <h4>Описание Голосования</h4>
+            <ul class="Ddd">
+              <li class="d1"><span>Обязанности:</span> <br> Специалист по работе с тендерами===Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>
+              <li class="d3"><span>Требования:</span><br>
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>              
+              
+              <li class="d2">
+                <span>Условия:</span> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              </li>
+
+              <li class="d4">
+                <button id="btn4_ddd" class="anketa_open">Откликнуться</button>
+              </li>
+            </ul>                        
+
+        </div>        
+        <div class="div-position_info hr13">
+            <a href="" class="a_pos_table">
+              Специалист по 1С
+            </a>       
+
+        </div>  
+        <div class="div-position_info hr14 salary">
+            от 45 000 рублей
+        </div>
+        <div class="div-details hr15">
+
+            <h4>Описание Голосования</h4>
+            <ul class="Ddd">
+              <li class="d1"><span>Обязанности:</span> <br> Специалист по 1С===Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>
+              <li class="d3"><span>Требования:</span><br>              
+                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias qui aliquam dolorem quis voluptate dolor nemo accusantium neque excepturi, explicabo reiciendis esse nobis tempora aut eaque a, obcaecati optio. Dolorem.
+              </li>              
+              <li class="d2">
+                <span>Условия:</span><br>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              </li>
+
+
+              <li class="d4">
+                <button  id="btn5_ddd" class="anketa_open">Откликнуться
+                  <!-- <a href="hr.html" class=""....onclick="document.location='hr.html'"></a> -->
+                </button>
+              </li>
+            </ul>                        
+
+        </div>
+      </div>    
+   <!-- </div>   -->
+</section>
+<!-- ЭТО СТРАНИЦА - ГОЛОСОВАНИЕ -->
+<footer class="footer">
+  <div class="Flag icon">
+<a href="#">
+  <a href="#">
+  <img src="../images/2__RF_flag_w_LOGO.svg" alt="" class="rflag">
+
+</a>
+</a>
+  </div>
+  <div class="RF">
+    <a href="#">Российская Федерация</a>
+  
+  </div>
+  <div class="Newsletter">
+    <a href="#">Новости</a>
+  </div>
+      <div class="Help">
+    <a href="#">Помощь</a>
+      </div>
+  <div class="Store">
+    <a href="#">Магазин</a>
+     </div>
+  <div class="Following">
+    <a href="#">Следите за нами</a>
+
+  </div>
+  <div class="legal-use">
+    <a href="#">Условия пользования</a>
+    </div>
+  <div class="Vacancies">
+    <a href="#">Голосования</a>
+    </div>
+  <div class="site-map">
+    <a href="#">Карта сайта</a>
+
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="hr5.js"></script>
+</body>
+</html>
+
+
